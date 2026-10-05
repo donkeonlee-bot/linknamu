@@ -1,8 +1,8 @@
 import type { IconType } from "react-icons";
-import { FaGithub, FaInstagram, FaLinkedinIn, FaPenNib } from "react-icons/fa6";
+import { FaEnvelope, FaGithub, FaLinkedinIn, FaPenNib } from "react-icons/fa6";
 import { FiChevronRight } from "react-icons/fi";
 
-export type Platform = "blog" | "instagram" | "github" | "linkedin";
+export type Platform = "blog" | "email" | "github" | "linkedin";
 
 const platforms: Record<
   Platform,
@@ -13,10 +13,10 @@ const platforms: Record<
     badge: "bg-emerald-500",
     hover: "hover:border-emerald-500",
   },
-  instagram: {
-    icon: FaInstagram,
-    badge: "bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600",
-    hover: "hover:border-pink-500",
+  email: {
+    icon: FaEnvelope,
+    badge: "bg-rose-500",
+    hover: "hover:border-rose-500",
   },
   github: {
     icon: FaGithub,
